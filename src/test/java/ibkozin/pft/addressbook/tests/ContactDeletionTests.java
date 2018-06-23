@@ -1,4 +1,4 @@
-package ibkozin.pft.addressbook;
+package ibkozin.pft.addressbook.tests;
 
 import org.testng.annotations.Test;
 

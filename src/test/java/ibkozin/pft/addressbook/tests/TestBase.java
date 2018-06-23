@@ -1,4 +1,4 @@
-package ibkozin.pft.addressbook;
+package ibkozin.pft.addressbook.tests;
 
 import ibkozin.pft.addressbook.appmanager.ApplicationManager;
 import org.testng.annotations.AfterMethod;
