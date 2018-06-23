@@ -39,4 +39,8 @@ public class ContactHelper extends HelperBase {
     public void deleteSelectedContacts() {
         click(By.xpath("//html//div[2]/input[1]"));
     }
+
+    public void editContact() {
+        click(By.xpath("//a[@href='edit.php?id=8']//img[@src='icons/pencil.png']"));
+    }
 }

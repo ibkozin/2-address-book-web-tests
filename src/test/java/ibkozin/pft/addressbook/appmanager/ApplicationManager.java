@@ -17,10 +17,6 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
 
 
-    public FirefoxDriver getWd() {
-        return wd;
-    }
-
     public void init() {
         wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
