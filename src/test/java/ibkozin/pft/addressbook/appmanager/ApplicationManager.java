@@ -29,14 +29,14 @@ public class ApplicationManager {
 
 
     public void init() {
-        if (browser == BrowserType.FIREFOX){
-            FirefoxOptions options = new FirefoxOptions();
-            options.setBinary(new FirefoxBinary(new File("C:\\Program Files\\Firefox Nightly\\firefox.exe")));
-            wd = new FirefoxDriver(options);
-//          wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
-        } else if (browser == BrowserType.CHROME){
+        if (browser.equals(BrowserType.FIREFOX)){
+            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+//            FirefoxOptions options = new FirefoxOptions();
+//            options.setBinary(new FirefoxBinary(new File("C:\\Program Files\\Firefox Nightly\\firefox.exe")));
+//            wd = new FirefoxDriver(options);
+        } else if (browser.equals(BrowserType.CHROME)){
             wd = new ChromeDriver();
-        } else if (browser == BrowserType.IE){
+        } else if (browser.equals(BrowserType.IE)){
             wd = new InternetExplorerDriver();
         }
 
