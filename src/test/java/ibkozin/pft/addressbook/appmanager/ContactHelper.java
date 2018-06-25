@@ -2,8 +2,10 @@ package ibkozin.pft.addressbook.appmanager;
 
 import ibkozin.pft.addressbook.model.ContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ContactHelper extends HelperBase {
 
@@ -26,10 +28,21 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), contactData.getMobilePhone());
         type(By.name("work"), contactData.getWorkPhone());
         type(By.name("email"), contactData.getEmail());
+        if (isElementPresent(By.name("new_group"))){
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        }
         type(By.name("address2"), contactData.getSecondaryAddress());
-     }
+    }
+    private boolean isElementPresent(By locator) {
+        try{
+        wd.findElement(locator);
+        return true;
+        } catch (NoSuchElementException ex){
+            return false;
+        }
+    }
 
-    public void initContactCreation() {
+        public void initContactCreation() {
         click(By.linkText("add new"));
     }
 
