@@ -30,17 +30,17 @@ public class ApplicationManager {
 
     public void init() {
         if (browser.equals(BrowserType.FIREFOX)){
-            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
-//            FirefoxOptions options = new FirefoxOptions();
-//            options.setBinary(new FirefoxBinary(new File("C:\\Program Files\\Firefox Nightly\\firefox.exe")));
-//            wd = new FirefoxDriver(options);
+//            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+            FirefoxOptions options = new FirefoxOptions();
+            options.setBinary(new FirefoxBinary(new File("C:\\Program Files\\Firefox Nightly\\firefox.exe")));
+            wd = new FirefoxDriver(options);
         } else if (browser.equals(BrowserType.CHROME)){
             wd = new ChromeDriver();
         } else if (browser.equals(BrowserType.IE)){
             wd = new InternetExplorerDriver();
         }
 
-        wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
