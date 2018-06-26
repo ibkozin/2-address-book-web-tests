@@ -33,16 +33,8 @@ public class ContactHelper extends HelperBase {
         }
         type(By.name("address2"), contactData.getSecondaryAddress());
     }
-    private boolean isElementPresent(By locator) {
-        try{
-        wd.findElement(locator);
-        return true;
-        } catch (NoSuchElementException ex){
-            return false;
-        }
-    }
 
-        public void initContactCreation() {
+    public void initContactCreation() {
         click(By.linkText("add new"));
     }
 
@@ -56,6 +48,7 @@ public class ContactHelper extends HelperBase {
 
     public void editContact() {
         click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+
     }
 
     public void submitContactModification() {click(By.name("update"));
