@@ -54,19 +54,48 @@ public class Task7 {
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(3)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(4)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(5)"));
+        assertHeader(By.cssSelector("#doc-csv"));
+        assertHeader(By.cssSelector("#doc-newsletter"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(6)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(7)"));
+        assertHeader(By.cssSelector("#doc-languages"));
+        assertHeader(By.cssSelector("#doc-storage_encoding"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(8)"));
+        assertHeader(By.cssSelector("#doc-jobs"));
+        assertHeader(By.cssSelector("#doc-customer"));
+        assertHeader(By.cssSelector("#doc-shipping"));
+        assertHeader(By.cssSelector("#doc-payment"));
+        assertHeader(By.cssSelector("#doc-order_total"));
+        assertHeader(By.cssSelector("#doc-order_success"));
+        assertHeader(By.cssSelector("#doc-order_action"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(9)"));
+        assertHeader(By.cssSelector("#doc-orders"));
+        assertHeader(By.cssSelector("#doc-order_statuses"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(10)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(11)"));
+        assertHeader(By.cssSelector("#doc-monthly_sales"));
+        assertHeader(By.cssSelector("#doc-most_sold_products"));
+        assertHeader(By.cssSelector("#doc-most_shopping_customers"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(12)"));
+        assertHeader(By.cssSelector("#doc-store_info"));
+        assertHeader(By.cssSelector("#doc-defaults"));
+        assertHeader(By.cssSelector("#doc-general"));
+        assertHeader(By.cssSelector("#doc-listings"));
+        assertHeader(By.cssSelector("#doc-images"));
+        assertHeader(By.cssSelector("#doc-checkout"));
+        assertHeader(By.cssSelector("#doc-advanced"));
+        assertHeader(By.cssSelector("#doc-security"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(13)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(14)"));
+        assertHeader(By.cssSelector("#doc-tax_classes"));
+        assertHeader(By.cssSelector("#doc-tax_rates"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(15)"));
+        assertHeader(By.cssSelector("#doc-search"));
+        assertHeader(By.cssSelector("#doc-scan"));
+        assertHeader(By.cssSelector("#doc-csv"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(16)"));
         assertHeader(By.cssSelector("ul#box-apps-menu>li:nth-child(17)"));
-
+        assertHeader(By.cssSelector("#doc-vqmods"));
     }
 
     private void assertHeader(By locator) {
