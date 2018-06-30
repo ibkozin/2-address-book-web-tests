@@ -14,6 +14,8 @@ import java.util.concurrent.TimeUnit;
 public class Task7 {
     private WebDriver wd;
     private WebDriverWait wait;
+
+
     public boolean isElementPresents(By locator){
         try {
             wd.findElements(locator);
