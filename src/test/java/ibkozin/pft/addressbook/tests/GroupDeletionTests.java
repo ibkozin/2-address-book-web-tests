@@ -1,7 +1,10 @@
 package ibkozin.pft.addressbook.tests;
 
 import ibkozin.pft.addressbook.model.GroupData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class GroupDeletionTests extends TestBase {
     @Test
@@ -11,8 +14,12 @@ public class GroupDeletionTests extends TestBase {
         if (! app.getGroupHelper().isThereAGroup()){
             app.getGroupHelper().createGroup(new GroupData("Test Group Name", "Test Group Header", null));
         }
-        app.getGroupHelper().selectGroup();
+        List<GroupData> before = app.getGroupHelper().getGroupList();
+        app.getGroupHelper().selectGroup(0);
         app.getGroupHelper().deleteSelectedGroups();
         app.getGroupHelper().returnToGroupPage();
+        List<GroupData> after = app.getGroupHelper().getGroupList();
+        Assert.assertEquals(after.size(), before.size() - 1);
+
     }
 }
