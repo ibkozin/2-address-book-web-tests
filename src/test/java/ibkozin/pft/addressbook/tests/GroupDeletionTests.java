@@ -4,6 +4,7 @@ import ibkozin.pft.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class GroupDeletionTests extends TestBase {
@@ -22,7 +23,7 @@ public class GroupDeletionTests extends TestBase {
         Assert.assertEquals(after.size(), before.size() - 1);
 
         before.remove(0);
-        Assert.assertEquals(before, after);
+        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
 
 
     }
