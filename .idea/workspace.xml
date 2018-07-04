@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContactCreationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactCreationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="419">
+              <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -58,10 +58,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task8.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="184">
               <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
@@ -101,32 +122,6 @@
               <caret line="25" selection-start-line="25" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/NavigationHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="method#NavigationHelper#0;class#NavigationHelper#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/GroupHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-              <folding>
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
-                <element signature="e#1740#1751#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -449,7 +444,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task1.java" />
         <option value="$PROJECT_DIR$/src/main/java/SeleniumTask7.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task7.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task8.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/GroupDeletionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactDeletionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/GroupHelper.java" />
@@ -460,6 +454,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactModificationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/GroupCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task8.java" />
       </list>
     </option>
   </component>
@@ -544,7 +539,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ibkozin" type="462c0819:PsiDirectoryNode" />
               <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2-address-book-web-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -553,8 +548,7 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ibkozin" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="litecart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2-address-book-web-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -614,7 +608,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ibkozin.pft.addressbook.tests">
+  <component name="RunManager" selected="TestNG.Task8">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -721,19 +715,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="GroupModificationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Task8" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="2-address-book-web-tests_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ibkozin.pft.addressbook.tests.*" />
+          <option name="PATTERN" value="ibkozin.ptf.litecart.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ibkozin.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ibkozin.pft.addressbook.tests.GroupModificationTests" />
+      <option name="PACKAGE_NAME" value="ibkozin.ptf.litecart" />
+      <option name="MAIN_CLASS_NAME" value="ibkozin.ptf.litecart.Task8" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -803,18 +797,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="TestNG.GroupModificationTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.ContactModificationTests" />
       <item itemvalue="TestNG.ibkozin.pft.addressbook.tests" />
+      <item itemvalue="TestNG.Task8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Task8" />
         <item itemvalue="TestNG.ibkozin.pft.addressbook.tests" />
         <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.ContactModificationTests" />
-        <item itemvalue="TestNG.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -832,24 +826,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactModificationTests - 2018.07.03 at 22h 56m 44s.xml">
-      <configuration name="ContactModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactModificationTests - 2018.07.03 at 23h 03m 17s.xml">
-      <configuration name="ContactModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupModificationTests - 2018.07.03 at 23h 11m 35s.xml">
-      <configuration name="GroupModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactModificationTests - 2018.07.03 at 23h 22m 58s.xml">
-      <configuration name="ContactModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactModificationTests - 2018.07.03 at 23h 46m 20s.xml">
-      <configuration name="ContactModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactModificationTests - 2018.07.03 at 23h 46m 48s.xml">
-      <configuration name="ContactModificationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactModificationTests - 2018.07.03 at 23h 50m 47s.xml">
       <configuration name="ContactModificationTests" configurationId="TestNG" />
     </history-entry>
@@ -861,6 +837,24 @@
     </history-entry>
     <history-entry file="GroupCreationTests - 2018.07.04 at 00h 21m 19s.xml">
       <configuration name="GroupCreationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreationTests - 2018.07.04 at 00h 25m 03s.xml">
+      <configuration name="ContactCreationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreationTests - 2018.07.04 at 00h 25m 38s.xml">
+      <configuration name="ContactCreationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ibkozin_pft_addressbook_tests - 2018.07.04 at 00h 26m 16s.xml">
+      <configuration name="ibkozin.pft.addressbook.tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Task8 - 2018.07.04 at 10h 37m 54s.xml">
+      <configuration name="Task8" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Task8 - 2018.07.04 at 10h 39m 00s.xml">
+      <configuration name="Task8" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Task8 - 2018.07.04 at 10h 39m 43s.xml">
+      <configuration name="Task8" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -875,12 +869,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44620812" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44620812" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.165231" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.165231" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -911,7 +905,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactCreationTests.java</url>
-          <line>37</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -1174,16 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -1226,13 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.12.0/ceb40cad9c71b19b522e5363f5aceb88f2ea6958/selenium-api-3.12.0-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1262,13 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/model/ContactData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1278,6 +1248,30 @@
             <element signature="e#2975#2976#0" expanded="true" />
             <element signature="e#3711#3712#0" expanded="true" />
             <element signature="e#3739#3740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/GroupCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1299,34 +1293,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/GroupCreationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="170">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactDeletionTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/appmanager/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="184">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/pft/addressbook/tests/ContactCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="419">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ibkozin/ptf/litecart/Task8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
