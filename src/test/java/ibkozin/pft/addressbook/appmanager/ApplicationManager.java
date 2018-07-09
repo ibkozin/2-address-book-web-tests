@@ -65,6 +65,10 @@ public class ApplicationManager {
         wd.switchTo().alert().accept();
     }
 
+    public NavigationHelper goTo(){
+        return navigationHelper;
+    }
+
     public GroupHelper getGroupHelper() {
         return groupHelper;
     }
@@ -73,7 +77,4 @@ public class ApplicationManager {
         return contactHelper;
     }
 
-    public NavigationHelper goTo() {
-        return navigationHelper;
-    }
 }
