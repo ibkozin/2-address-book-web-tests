@@ -1,10 +1,9 @@
-package ibkozin.pft.addressbook.appmanager;
+package ibkozin.Asurion.appmanager;
 
-import ibkozin.pft.addressbook.model.GroupData;
+import ibkozin.Asurion.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,14 +56,6 @@ public class GroupHelper extends HelperBase {
         returnToGroupPage();
 
     }
-    public void modifyGroup(int index, GroupData group) {
-        selectGroup(index);
-        initGroupModification();
-        fillGroupForm(group);
-        submitGroupModification();
-        returnToGroupPage();
-    }
-
 
     public boolean isThereAGroup() {
         return isElementPresent(By.name("selected[]"));

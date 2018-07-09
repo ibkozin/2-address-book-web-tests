@@ -1,17 +1,16 @@
-package ibkozin.pft.addressbook.appmanager;
+package ibkozin.Asurion.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigationHelper extends HelperBase{
+public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(WebDriver wd) {
         super(wd);
 
     }
 
-    public void groupPage() {
+    public void goToGroupPage() {
         if (isElementPresent(By.tagName("h1"))
                 && wd.findElement(By.tagName("h1")).getText().equals("Group")
                 && isElementPresent(By.name("new"))){

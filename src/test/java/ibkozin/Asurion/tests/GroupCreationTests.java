@@ -1,17 +1,17 @@
-package ibkozin.pft.addressbook.tests;
+package ibkozin.Asurion.tests;
 
-import ibkozin.pft.addressbook.model.GroupData;
+import ibkozin.Asurion.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Comparator;
 import java.util.List;
 
-public class GroupCreationTests extends TestBase{
+public class GroupCreationTests extends TestBase {
 
     @Test
     public void testGroupCreation() {
-        app.goTo().groupPage();
+        app.getNavigationHelper().goToGroupPage();
         List<GroupData> before = app.getGroupHelper().getGroupList();
         GroupData group = new GroupData("Test1 Group Name", "Test Group Header", null);
         app.getGroupHelper().createGroup(group);

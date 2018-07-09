@@ -1,23 +1,21 @@
-package ibkozin.pft.addressbook.appmanager;
+package ibkozin.Asurion.appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class ApplicationManager {
     WebDriver wd;
 
 
-    private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private ContactHelper contactHelper;
     private GroupHelper groupHelper;
@@ -45,24 +43,18 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
 
-//        Runtime.getRuntime().addShutdownHook(
-//                new Thread(() -> { wd.quit(); wd = null; }));
+        Runtime.getRuntime().addShutdownHook(
+                new Thread(() -> { wd.quit(); wd = null; }));
 
 
-        wd.get("http://localhost/addressbook/");
+        wd.get("https://careers.asurion.com/");
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
         navigationHelper = new NavigationHelper(wd);
-        sessionHelper = new SessionHelper(wd);
-        sessionHelper.login("admin", "secret");
     }
 
     public void stop() {
-        wd.quit();
-    }
-
-    public void alertAccept() {
-        wd.switchTo().alert().accept();
+//        wd.quit();
     }
 
     public GroupHelper getGroupHelper() {
@@ -73,7 +65,7 @@ public class ApplicationManager {
         return contactHelper;
     }
 
-    public NavigationHelper goTo() {
+    public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
 }
