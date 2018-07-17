@@ -1,5 +1,6 @@
 package ibkozin.pft.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -17,6 +18,16 @@ public class ContactData {
     private final String email;
     private final String secondaryAddress;
     private String group;
+
+    public File getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(File photo) {
+        this.photo = photo;
+    }
+
+    private File photo;
 
     public ContactData(String firstName, String middleName, String lastName, String nickName, String title, String company, String address, String homePhone, String mobilePhone, String workPhone, String email, String secondaryAddress, String group) {
         this.id = 0;

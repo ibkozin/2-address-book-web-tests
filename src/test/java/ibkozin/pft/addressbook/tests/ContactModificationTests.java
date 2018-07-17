@@ -2,18 +2,24 @@ package ibkozin.pft.addressbook.tests;
 
 import ibkozin.pft.addressbook.model.ContactData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Comparator;
 import java.util.List;
 
 public class ContactModificationTests extends  TestBase{
-    @Test
-    public void testContactModification(){
+    @BeforeMethod
+    private void insurePreconditions() {
         app.goTo().goToHomePage();
         if (! app.getContactHelper().isThereAContact()){
             app.getContactHelper().createContact(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
         }
+    }
+
+
+    @Test
+    public void testContactModification(){
         List<ContactData> before = app.getContactHelper().getContactList();
         int index = before.size()-1;
         app.getContactHelper().editContact(index);
@@ -33,6 +39,7 @@ public class ContactModificationTests extends  TestBase{
         Assert.assertEquals(before, after);
 
     }
+
 
 
 }
