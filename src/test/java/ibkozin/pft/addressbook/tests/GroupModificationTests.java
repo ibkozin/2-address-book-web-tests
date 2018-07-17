@@ -23,7 +23,6 @@ public class GroupModificationTests extends TestBase {
         List<GroupData> before = app.group().list();
         int index = before.size() - 1;
         GroupData group = new GroupData().withId(before.get(index).getId()).withName("Mod Group Name").withHeader("Mod Group Header").withFooter("Mod Group Footer");
-
         app.group().modify(index, group);
         List<GroupData> after = app.group().list();
         Assert.assertEquals(after.size(), before.size());

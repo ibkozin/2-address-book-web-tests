@@ -59,7 +59,7 @@ public class ContactHelper extends HelperBase {
     public void submitContactModification() {click(By.name("update"));
     }
 
-    public void createContact(ContactData contactData) {
+    public void create(ContactData contactData) {
         initContactCreation();
         fillContactCreationForm(contactData);
         submitContactCreationForm();
