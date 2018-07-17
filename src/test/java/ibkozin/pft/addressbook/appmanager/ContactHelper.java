@@ -74,7 +74,7 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<ContactData> getContactList() {
+    public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<>();
         List<WebElement> elements = wd.findElements(By.cssSelector("[name=entry]"));
        for (WebElement element : elements){
@@ -88,4 +88,10 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
+    public void modify(int index, ContactData contact) {
+        editContact(index);
+        fillContactCreationForm(contact);
+        submitContactModification();
+    }
+
 }

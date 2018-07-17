@@ -11,25 +11,20 @@ import java.util.List;
 public class ContactDeletionTests extends TestBase {
     @BeforeMethod
     public void insurePreconditions(){
-        app.goTo().goToHomePage();
-        if (! app.getContactHelper().isThereAContact()){
-            app.getContactHelper().createContact(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
+        app.goTo().home();
+        if (app.contact().list().size() == 0){
+            app.contact().createContact(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
         }
-
     } 
 
     @Test
     public void testContactDeletion(){
-        app.goTo().goToHomePage();
-        if (! app.getContactHelper().isThereAContact()){
-            app.getContactHelper().createContact(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
-        }
-        List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().selectContact(0);
-        app.getContactHelper().deleteSelectedContacts();
+        List<ContactData> before = app.contact().list();
+        app.contact().selectContact(0);
+        app.contact().deleteSelectedContacts();
         app.alertAccept();
-        app.goTo().goToHomePage();
-        List<ContactData> after = app.getContactHelper().getContactList();
+        app.goTo().home();
+        List<ContactData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size() - 1);
 
         before.remove(0);
