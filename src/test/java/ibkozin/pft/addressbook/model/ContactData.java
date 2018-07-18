@@ -4,19 +4,19 @@ import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
-    private  int id;
-    private final String firstName;
-    private final String middleName;
-    private final String lastName;
-    private final String nickName;
-    private final String title;
-    private final String company;
-    private final String address;
-    private final String homePhone;
-    private final String mobilePhone;
-    private final String workPhone;
-    private final String email;
-    private final String secondaryAddress;
+    private  int id = Integer.MAX_VALUE;
+    private  String firstName;
+    private  String middleName;
+    private  String lastName;
+    private  String nickName;
+    private  String title;
+    private  String company;
+    private  String address;
+    private  String homePhone;
+    private  String mobilePhone;
+    private  String workPhone;
+    private  String email;
+    private  String secondaryAddress;
     private String group;
 
     public File getPhoto() {
@@ -29,39 +29,6 @@ public class ContactData {
 
     private File photo;
 
-    public ContactData(String firstName, String middleName, String lastName, String nickName, String title, String company, String address, String homePhone, String mobilePhone, String workPhone, String email, String secondaryAddress, String group) {
-        this.id = 0;
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.nickName = nickName;
-        this.title = title;
-        this.company = company;
-        this.address = address;
-        this.homePhone = homePhone;
-        this.mobilePhone = mobilePhone;
-        this.workPhone = workPhone;
-        this.email = email;
-        this.secondaryAddress = secondaryAddress;
-        this.group = group;
-    }
-
-    public ContactData(int  id, String firstName, String middleName, String lastName, String nickName, String title, String company, String address, String homePhone, String mobilePhone, String workPhone, String email, String secondaryAddress, String group) {
-        this.id = id;
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.nickName = nickName;
-        this.title = title;
-        this.company = company;
-        this.address = address;
-        this.homePhone = homePhone;
-        this.mobilePhone = mobilePhone;
-        this.workPhone = workPhone;
-        this.email = email;
-        this.secondaryAddress = secondaryAddress;
-        this.group = group;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -144,7 +111,74 @@ public class ContactData {
         return Objects.hash(id, firstName, lastName);
     }
 
-    public void setId(int id) {
+    public ContactData withId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public ContactData withFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
+    }
+
+    public ContactData withMiddleName(String middleName) {
+        this.middleName = middleName;
+        return this;
+    }
+
+    public ContactData withLastName(String lastName) {
+        this.lastName = lastName;
+        return this;
+    }
+
+    public ContactData withNickName(String nickName) {
+        this.nickName = nickName;
+        return this;
+    }
+
+    public ContactData withTitle(String title) {
+        this.title = title;
+        return this;
+    }
+
+    public ContactData withCompany(String company) {
+        this.company = company;
+        return this;
+    }
+
+    public ContactData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public ContactData withtHomePhone(String homePhone) {
+        this.homePhone = homePhone;
+        return this;
+    }
+
+    public ContactData withMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
+        return this;
+
+    }
+
+    public ContactData withWorkPhone(String workPhone) {
+        this.workPhone = workPhone;
+        return this;
+    }
+
+    public ContactData withEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public ContactData withSecondaryAddress(String secondaryAddress) {
+        this.secondaryAddress = secondaryAddress;
+        return this;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
     }
 }

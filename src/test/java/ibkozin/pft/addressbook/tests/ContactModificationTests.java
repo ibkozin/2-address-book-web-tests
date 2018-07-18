@@ -13,7 +13,9 @@ public class ContactModificationTests extends  TestBase{
     private void insurePreconditions() {
         app.goTo().home();
         if (app.contact().list().size() == 0){
-            app.contact().create(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
+            app.contact().create(new ContactData().withFirstName("TestFirstName").withMiddleName("TestMiddleName").withLastName("TestLastName").withNickName("TestNickname")
+                    .withTitle("TestTitle").withCompany("TestCompany").withAddress("TestAdress").withMobilePhone("1123225").withWorkPhone("2453304").withtHomePhone("3480409")
+                    .withEmail("ibkozin@gmail.com").withSecondaryAddress("TestSecondaryAddress").withGroup("Test Group Name"));
         }
     }
 
@@ -21,7 +23,7 @@ public class ContactModificationTests extends  TestBase{
     public void testContactModification(){
         List<ContactData> before = app.contact().list();
         int index = before.size()-1;
-        ContactData contact = new ContactData(before.get(index).getId(),"ModFirstName", "ModTestMiddleName", "ModTestLastName", "ModTestNickname", "ModTestTitle", "ModTestCompany", "ModTestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "ModTestSecondaryAddress", null);
+        ContactData contact = new ContactData().withId(before.get(index).getId()).withFirstName("ModFirstName").withMiddleName("ModMiddleName").withLastName("ModLastName");
         app.contact().modify(index, contact);
         app.goTo().home();
         List<ContactData> after = app.contact().list();

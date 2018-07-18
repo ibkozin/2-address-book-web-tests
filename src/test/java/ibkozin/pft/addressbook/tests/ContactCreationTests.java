@@ -13,7 +13,9 @@ public class ContactCreationTests extends TestBase {
     public void testContactCreation() {
         app.goTo().home();
         List<ContactData> before = app.contact().list();
-        ContactData contact = new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name");
+        ContactData contact = new ContactData().withFirstName("TestFirstName").withMiddleName("TestMiddleName").withLastName("TestLastName").withNickName("TestNickname")
+                .withTitle("TestTitle").withCompany("TestCompany").withAddress("TestAdress").withMobilePhone("1123225").withWorkPhone("2453304").withtHomePhone("3480409")
+                .withEmail("ibkozin@gmail.com").withSecondaryAddress("TestSecondaryAddress").withGroup("Test Group Name");
         app.contact().create(contact);
         app.goTo().home();
         List<ContactData> after = app.contact().list();
@@ -27,7 +29,7 @@ public class ContactCreationTests extends TestBase {
 //            }
 //        }
         int max = after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId();
-        contact.setId(max);
+        contact.withId(max);
         before.add(contact);
 //        Сравнение множеств:
 //        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));

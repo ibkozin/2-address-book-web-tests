@@ -13,7 +13,9 @@ public class ContactDeletionTests extends TestBase {
     public void insurePreconditions(){
         app.goTo().home();
         if (app.contact().list().size() == 0){
-            app.contact().create(new ContactData("TestFirstName", "TestMiddleName", "TestLastName", "TestNickname", "TestTitle", "TestCompany", "TestAdress", "1123225", "2453304", "3480409", "ibkozin@gmail.com", "TestSecondaryAddress", "Test Group Name"));
+            app.contact().create(new ContactData().withFirstName("TestFirstName").withMiddleName("TestMiddleName").withLastName("TestLastName").withNickName("TestNickname")
+                    .withTitle("TestTitle").withCompany("TestCompany").withAddress("TestAdress").withMobilePhone("1123225").withWorkPhone("2453304").withtHomePhone("3480409")
+                    .withEmail("ibkozin@gmail.com").withSecondaryAddress("TestSecondaryAddress").withGroup("Test Group Name"));
         }
     } 
 
@@ -28,7 +30,7 @@ public class ContactDeletionTests extends TestBase {
         List<ContactData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size() - 1);
 
-        before.remove(0);
+        before.remove(index);
         Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
 
 
